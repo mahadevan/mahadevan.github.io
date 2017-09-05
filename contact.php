@@ -6,7 +6,7 @@
 
 
 //E-mail address. Enter your email
-define("__TO__", "hello@mail.com");
+define("__TO__", "mahadevan.n.iyer@gmail.com");
 
 //Success message
 define('__SUCCESS_MESSAGE__', "Your message has been sent. We will reply soon. Thank you!");
