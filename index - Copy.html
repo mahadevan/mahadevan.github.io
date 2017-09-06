@@ -285,7 +285,7 @@
                                 </div>
                                 <div class="col-sm-8 padding-leftright-null">
                                     <!-- Contact Form -->
-                                    <form method="POST" action="http://formspree.io/mahadevan.n.iyer@gmail.com" id="contact-form" class="padding-md padding-md-topbottom-null">
+                                    <form id="contact-form" class="padding-md padding-md-topbottom-null">
                                         <div class="row no-margin">
                                             <div class="col-md-6 padding-leftright-null">
                                                 <div class="text small padding-topbottom-null">
@@ -294,19 +294,25 @@
                                             </div>
                                             <div class="col-md-6 padding-leftright-null">
                                                 <div class="text small padding-topbottom-null">
-                                                    <input class="form-field" name="email" id="mail" type="email" placeholder="Email">
+                                                    <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row no-margin">
                                             <div class="col-md-6 padding-leftright-null">
                                                 <div class="text small padding-topbottom-null">
-                                                    <textarea class="form-field" name="message" id="messageForm" rows="1" placeholder="Your Message"></textarea>
+                                                    <input class="form-field" name="subjectForm" id="subjectForm" type="text" placeholder="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 padding-leftright-null">
+                                                <div class="text small padding-topbottom-null">
+                                                    <textarea class="form-field" name="messageForm" id="messageForm" rows="1" placeholder="Your Message"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 padding-leftright-null">
                                                 <div class="text small padding-topbottom-null">
                                                     <div class="submit-area padding-onlytop-sm">
-                                                        <input type="submit" class="btn-alt active shadow" value="Send">
+                                                        <input type="submit" id="submit-contact" class="btn-alt active shadow" value="Send Message">
                                                         <div id="msg" class="message"></div>
                                                     </div>
                                                 </div>
