@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta name="referrer" content="origin" />
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -286,32 +285,17 @@
                                 </div>
                                 <div class="col-sm-8 padding-leftright-null">
                                     <!-- Contact Form -->
-                                    <form method="POST" action="http://formspree.io/mahadevan.n.iyer@gmail.com" class="padding-md padding-md-topbottom-null">
+                                    <form id="contact-form" class="padding-md padding-md-topbottom-null">
                                         <div class="row no-margin">
                                             <div class="col-md-6 padding-leftright-null">
                                                 <div class="text small padding-topbottom-null">
-                                                    <input class="form-field" name="name" type="text" placeholder="Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 padding-leftright-null">
-                                                <div class="text small padding-topbottom-null">
-                                                    <input class="form-field" name="_replyto" type="email" placeholder="Email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                            <div class="col-md-6 padding-leftright-null">
-                                                <div class="text small padding-topbottom-null">
-                                                    <textarea class="form-field" name="message" rows="1" placeholder="Your Message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 padding-leftright-null">
-                                                <div class="text small padding-topbottom-null">
                                                     <div class="submit-area padding-onlytop-sm">
-                                                        <input type="submit" class="btn-alt active shadow" value="Send">
+                                                        <input type="submit" id="submit-contact" class="btn-alt active shadow" value="Send Message">
+                                                        <div id="msg" class="message"></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                            </div>
                                     </form>
                                     <!-- END Contact Form -->
                                 </div>
