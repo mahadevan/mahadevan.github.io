@@ -112,12 +112,56 @@
                                    <p class="heading left max full grey-dark">Running C Programs in Windows 10</p>
                                    <ul>
                                    <li>
-                                       Step One :
+                                       <b> Step 1:</b> Download <a href="https://sourceforge.net/projects/dosbox/"> " DOSBox " from Here. </a> <br>
+                                       Download "Turbo" Folder from <a href="https://goo.gl/3m1JBr"> https://goo.gl/3m1JBr </a> <br>
                                    </li>
                                    <li>
-                                       Step Two :
+                                        <b> Step 2:</b> Install DOSBox.
                                    </li>
-                                   </ul>
+                                   <li>
+                                       <b> Step 3:</b> Extract "Turbo" folder into C:\ ( <em> eg: c:\Turbo </em> )
+                                   </li>
+                                   <li>
+                                        <b> Step 4:</b> After that click on the DOSBox shortcut that is created at the desktop.<br>
+                                   </li>
+                                   <li>
+                                        <b> Step 5:</b> Write these command:<br/><br/>
+
+<code> mount c c:\Turbo </code>
+
+(After this you will see a message that Drive C is mounted as a local directory C:\Turbo) <br/>
+
+<code> c: </code> (Switch to C directory) <br/>
+
+<code> cd tc </code> (Go to TC folder) <br/>
+
+<code> cd bin </code> (Go to Bin folder) <br/>
+
+<code> tc </code> (To execute Turbo C or Turbo C++) <br/>
+                                   </li>
+                                   <li>
+                                       <br/> <centre> <em> ***** Now Turbo C or C++ is running and you can write your programs. ***** </em> </centre>
+                                   </li>
+                                   </ul><br/>
+                                   <br/>
+                                   <h4> <u> Possible Issues </u> </h4>
+                                   <h5> (1) Error : When compiling program.You get the error <em> "Unable to open stdio.h in Turbo C !" </em> </h5>
+                                   <p> In Turbo C, goto OPTIONS > DIRECTORIES, try changing c:\tc\include to c:\include or change it according to the drive letter you mounted on the DOSBOX.</p><br/>
+                                   <h5> (2) Shortcut issue </h5>
+                                   <p> Ctrl+F9 is a shortcut for DOSBox to exit. It is also the shortcut to compile C Program. So if you use shortcuts then there would be an issue. If you face such problems, follow these steps:</p><br/>
+                                   <p> (i). When you are running Turbo C++ press Ctrl+F1. <br/></p>
+                                   <p>(ii). Click on Shut Down. <br/></p>
+
+<p>(iii). Click on Del. <br /></p>
+
+<p>(iv). Click on Add. <br /></p>
+
+<p>(v). Press q and then click on mod1 shown at left bottom corner (It sets the Ctrl+q as a shortcut to exit from DOSBox). <br /></p>
+
+<p>(vi). Click Save and then Exit. <br /></p>
+
+<p>Now you can compile your programs using Ctrl+F9 and use Ctrl+q to exit from DOSBox.</p>
+
                                </div>
                            </div>
                        </div>
