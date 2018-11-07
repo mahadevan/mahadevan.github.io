@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <title> Feedback </title>
+    <script>
+        function mahadevanjs() {
+            var name = document.forms["FeedBack"]["Name"];
+            var modelno = document.forms["FeedBack"]["ModelNo"];
+            var email = document.forms["FeedBack"]["EMail"];
+            var resi = document.forms["FeedBack"]["Residence"];
+            var comment = document.forms["FeedBack"]["Comment"];
+
+
+            if (name.value == "") {
+                window.alert("Please enter your name.");
+                name.focus();
+                return false;
+            }
+
+            if (modelno.value == "") {
+                window.alert("Please enter a valid Model No.");
+                modelno.focus();
+                return false;
+            }
+
+
+
+            if (modelno.value != "BX15" && modelno.value != "Mango" && modelno.value != "DLX007") {
+                window.alert("Invalid Model No. Valid Models : BX15, Mango, DLX007 . ");
+                modelno.focus();
+                return false;
+            }
+
+
+            if (email.value == "") {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (email.value.indexOf("@", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (email.value.indexOf(".", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (resi.selectedIndex < 1) {
+                alert("Please Enter Your Residence.");
+                what.focus();
+                return false;
+            }
+
+            if (comment.value == "") {
+                window.alert("Please Enter Your Feedback.");
+                name.focus();
+                return false;
+            }
+
+            return true;
+        }</script>
+    <style>
+
+        .header {
+  height: 15%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  bottom: 85%;
+  left:0%;
+  right:0%;
+  border-style: solid;
+  background-color: lightblue;
+}
+
+.footer {
+  height: 15%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  bottom: 0%;
+  top:85%;
+  left:0%;
+  right:0%;
+  border-style: solid;
+  text-align: center
+}
+
+.left {
+height: 70%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top:15%;
+  left: 0%;
+  right:85%; 
+  bottom:15%;
+  border-style: solid;
+}
+
+.content {
+height: 70%;
+  width: 85%;
+  position: fixed;
+  z-index: 1;
+  top:15%;
+  left:15%;
+  right:0%;
+  bottom:15%;
+  border-style: solid;
+}
+
+.rightpad {
+	padding-left: 5%;
+}
+
+		</style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <table align="center">
+            <tr>
+                <td valign="middle">
+                    <img src="logo.png " alt="Logo" style="width:55px;height:55px;"> </td>
+                <td valign="middle">
+                    <h1 align="center" valign="middle"> Kalpathy Mobiles </h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="left">
+        <ul>
+            <li> <b><a href="home.html">HOME</a></b> </li>
+            <li> <b><a href="mobile_model_list.html">Mobile Models</a></b> </li>
+            <li> <b><a href="detailed_specs.html">Specifications</a></b> </li>
+            <li> <b><a href="feedback.html">Feedback</a></b> </li>
+        </ul>
+    </div>
+    </div>
+
+    </div>
+    <div class="content">
+        <h1 style="text-align: center"> Feedback </h1>
+		<table align="center"> <tr> <td>
+        <form name="FeedBack" action="submit.html" onsubmit="return mahadevanjs()" method="post">
+
+            <p>Name Of Buyer: <input type="text" size=65 name="Name"> </p>
+            <p>Model Number : <input type="text" size=65 name="ModelNo"> </p>
+            <p>E-mail Address: <input type="text" size=65 name="EMail"> </p>
+            <p>Residence
+                <select type="text" value="" name="Residence">
+                    <option>
+                    <option>
+                    <option>Palakkad</option>
+                    <option>Trissur</option>
+                    <option>Cochin</option>
+                    <option>Coimbatore</option>
+                </select></p>
+            <p>Feedback: </br> <textarea cols="55" name="Comment" label="Enter Feedback Here !"></textarea></p>
+            <p><input type="submit" value="send" name="Submit">
+                <input type="reset" value="Reset" name="Reset">
+            </p>
+        </form>
+		</td> </tr> </table>
+    </div>
+    <div class="footer">
+        <p> Mahadevan WebWorkz | &copy; Copyright 2018-19 Mahadevan Iyer | All Rights Reserved </p>
+    </div>
+</body>
+
+</html>
