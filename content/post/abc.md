@@ -1,8 +1,14 @@
 ---
-title: New-abc
-description: Math typesetting using KaTeX
-date: 2024-08-24 00:00:00+0000
-math: true
+title: "New-abc"
+description: "New-abc"
+slug: New-abc
+date: 2024-02-06 00:00:00+0000
+image:
+categories:
+  - Example Category
+tags:
+  - Example Tag
+weight: 1 # You can add weight to some posts to override the default sorting (date descending)
 ---
 
 Stack has built-in support for math typesetting using [KaTeX](https://katex.org/).
