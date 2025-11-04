@@ -1,10 +1,7 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Mahadevan's Notes
 ---
+These are Mahadevan's Public Notes
 
-This is a MDs blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
-
-[[note]]
-[[note 2 with templater]] 
+This is my first note [[note]], and this is my [[second note]] !
 
